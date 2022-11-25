@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pcsb"
+version = "1.0.0"
+description = "A `pass` character set builder"
+authors = ["McTavish McArdle <mctmca@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/mctavishmcardle/pcsb"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "*"
+
+[tool.poetry.scripts]
+pcsb = 'pcsb:cli'
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
